@@ -57,4 +57,9 @@ npm install
 * `npm run lint` - lint `src/`
 * `npm run lint:fix` - lint `src/` and auto-fix issues where possible
 
+## Building and running with Docker with NGINX
+
+* `docker build . -t react-hn-app` - build the Docker image with the Dockerfile that is now ready to be deployed in a cloud service because of nginx integration and exposing port 80.
+* `docker run --name react-hn-app -p 3000:80 -d react-hn-app` - This will run a Docker container and you can test it locally by visiting localhost:3000 in your browser.
+
 ## MIT Licensed
